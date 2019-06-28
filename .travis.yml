@@ -5,8 +5,9 @@ cache:
   directories:
   - "$HOME/.composer/cache"
   - npm
-before_install: npm install
-install: true
+before_install: true
+install:
+  npm install
 before_script: true
 script:
   node_modules/.bin/JSHint src/
