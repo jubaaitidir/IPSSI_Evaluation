@@ -1,23 +1,15 @@
 language: node_js
 node_js:
-  - '12'
+- '12'
 cache:
   directories:
-    - $HOME/.composer/cache
-    - npm
-
-before_install:
-  npm
-install:
-  tru
+  - "$HOME/.composer/cache"
+  - npm
+before_install: npm install
+install: true
 before_script: true
-script:
-#  - ./node_modules/.bin/JsHint test
-#  - ./node_modules/.bin/Retire
-#  - ./node_modules/.bin/Twly
+script: 
 after_script: true
-#deploy:
-#  provider: heroku
-#  api_key:
-#    secure: "key_replace"
-#  app: app-eval
+deploy:
+  api_key:
+    secure: Dvj722+I11MdPQam4cGyoPCsCRgZ35W/eOYiywzHJJTLMEB9tNfQtHsxg0ddyiSH0ul78kaL4YowRI+lGGcJoPk/1g/OMZeSfbI5aFX5eOdxEUX5Nni5YHq2EWkNypfbuhQ3kSxnXIrpDL8FhmfoC14k+hSiW+PBd0m/SL+gK/fRN4SgKRDaSLvxhLSMFCUNdRSEgn5lWYIStLJBttTsYnxdVB+M08aB0sqdj3Ujv0XUOGPM6+jkBYRLCds9b8plxqxBHLzrQwrRBc+t4/YBh7Y+oqlqd1CjWQNSk7m2KuEPWN+pvtMmzYAroQWsZYB4BawPxe4zTD4aisEr9FR0FIZRHkSUosVOOfyJlkLId0CrMubPA1Tcjump90gzBnX+19w6nMMPDBDt3jJJ1+KH16LoFabsOZixbzFwLpt7PJ52/BCRpxOcLd0xX5EmDp+jT0AQvTPp+c1lRB4/QQoczXz/YD1NvU+7+z0ehv+1wIM/quvCPTj6CTOyItA+R74OGcin37y/Z6KuwZf/55JBirro5Baugv4Ickvll1IszSTMit+KLEeGfsABUOECd0EzJqBJDZSwx4njm5gC2PC3YmJ8Av1dgh3V5i+vKPdh6QNkGqM1vv8vYAljg+ivZhRLu5rjzeY9S/OefWdZ0DDuwQoOfnpuTDjBhN6kiPbgDEs=
