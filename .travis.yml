@@ -6,9 +6,10 @@ cache:
     - $HOME/.composer/cache
     - npm
 
-before_install: true
+before_install:
+  npm
 install:
-  true
+  tru
 before_script: true
 script:
 #  - ./node_modules/.bin/JsHint test
