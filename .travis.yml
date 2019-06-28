@@ -7,7 +7,7 @@ cache:
 
 before_install: true
 install:
-  - composer install
+  true
 before_script: true
 script:
   - phpunit tests
