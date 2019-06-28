@@ -10,7 +10,7 @@ install:
   npm install
 before_script: true
 script:
-#  node_modules/.bin/JSHint src/
+  node_modules/.bin/JSHint src/
 #  node_modules/.bin/twly
 #  node_modules/.bin/retire
 after_script: true
