@@ -4,13 +4,16 @@ node_js:
 cache:
   directories:
     - $HOME/.composer/cache
+    - npm
 
 before_install: true
 install:
   true
 before_script: true
 script:
-  - true
+#  - ./node_modules/.bin/JsHint test
+#  - ./node_modules/.bin/Retire
+#  - ./node_modules/.bin/Twly
 after_script: true
 #deploy:
 #  provider: heroku
