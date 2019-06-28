@@ -1,0 +1,19 @@
+language: php
+php:
+  - '7.3'
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+before_install: true
+install:
+  - composer install
+before_script: true
+script:
+  - phpunit tests
+after_script: true
+deploy:
+  provider: heroku
+  api_key:
+    secure: "key_replace"
+  app: app-eval
